@@ -35,6 +35,7 @@ const Navigation = () => {
           variant="transparent"
           className="text-primary d-lg-none"
           onClick={handleShow}
+          aria-label="toggle Offcanvas"
         >
           <FaBars size="1.5em" />
         </Button>
