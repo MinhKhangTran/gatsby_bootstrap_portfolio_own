@@ -11,6 +11,9 @@
 // font family
 $font-family-base: "Montserrat", sans-serif;
 
+// close btn
+$btn-close-color: #0d6efd;
+
 // links
 
 // import variables and mixins files (so you can use them below)
@@ -47,3 +50,9 @@ $blue-colors: (
 @import "~bootstrap/scss/bootstrap";
 
 //import custom components
+@import "./contact";
+@import "./features";
+@import "./footer";
+@import "./hero";
+@import "./navigation";
+@import "./projects";
