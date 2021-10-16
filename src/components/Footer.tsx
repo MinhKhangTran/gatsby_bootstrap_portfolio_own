@@ -15,7 +15,7 @@ const Footer = () => {
             </Link>
           </Col>
           <Col lg={2} className="text-white">
-            <h4>Home</h4>
+            <h3>Home</h3>
             <ul className="list-unstyled">
               <li>
                 <a className="footer_links" href="#features">
@@ -35,7 +35,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col lg={2} className="text-white">
-            <h4>Legal</h4>
+            <h3>Legal</h3>
             <ul className="list-unstyled">
               <li>
                 <Link className="footer_links" to="privacy">
