@@ -1,13 +1,14 @@
 import { Link } from "gatsby";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 import logo from "../images/MKT_white.svg";
 
 const Footer = () => {
   return (
     <footer className="bg-blue-700">
       <Container className="">
-        <Row className="pt-5 pb-4">
+        <Row className="pt-5 pb-4 footer_container mb-4">
           <Col lg={8}>
             <Link to="/" className="">
               <img src={logo} alt="MKT" />
@@ -36,11 +37,34 @@ const Footer = () => {
           <Col lg={2} className="text-white">
             <h4>Legal</h4>
             <ul className="list-unstyled">
-              <li>Privacy Policy</li>
-              <li>Terms & Conditions</li>
+              <li>
+                <Link className="footer_links" to="privacy">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link className="footer_links" to="terms">
+                  Terms & Conditions
+                </Link>
+              </li>
             </ul>
           </Col>
         </Row>
+        <div className="footer_socials pb-4 d-flex justify-content-between align-items-center">
+          <span className="lead text-white">
+            &copy; {new Date().getFullYear()}, MKT. All rights reserved
+          </span>
+          <div className="socials text-white">
+            <a href="https://twitter.com/">
+              <FaTwitter size="2em" />
+              <span className="visually-hidden">Twitter</span>
+            </a>
+            <a href="https://github.com/">
+              <FaGithub size="2em" />
+              <span className="visually-hidden">Github</span>
+            </a>
+          </div>
+        </div>
       </Container>
     </footer>
   );
