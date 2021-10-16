@@ -1,0 +1,7 @@
+.footer_links {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: $blue-100;
+  }
+}
