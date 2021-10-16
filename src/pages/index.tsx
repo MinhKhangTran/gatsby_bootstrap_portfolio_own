@@ -1,5 +1,9 @@
 import * as React from "react";
+import Contact from "../components/Contact";
+import Features from "../components/Features";
+import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import Projects from "../components/Projects";
 import SEO from "../components/Seo";
 
 // markup
@@ -7,7 +11,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Homepage" />
-      <h1 className="bg-primary text-white">Hi Bootstrap and Gatsby</h1>
+      <Hero />
+      <Features />
+      <Projects />
+      <Contact />
     </Layout>
   );
 };

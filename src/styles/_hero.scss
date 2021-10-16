@@ -1,0 +1,21 @@
+h1 {
+  font-size: 1.5rem;
+}
+.hero_span {
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 992px) {
+  #hero {
+    height: calc(100vh - 56px);
+  }
+  .hero_container {
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  h1,
+  .hero_span,
+  .hero_subtitle {
+    font-size: 2.25rem;
+  }
+}

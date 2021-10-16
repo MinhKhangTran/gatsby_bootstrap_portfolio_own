@@ -16,16 +16,16 @@ const Navigation = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="white" expand="lg">
       <Container className="align-items-center">
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="MKT" />
         </Link>
-        <Nav className="ms-auto d-none d-lg-flex text-primary">
+        <Nav className="ms-auto d-none d-lg-flex ">
           {navArray.map((nav) => {
             const { id, url, title } = nav;
             return (
-              <Nav.Link key={id} href={url}>
+              <Nav.Link className="text-primary" key={id} href={url}>
                 {title}
               </Nav.Link>
             );
