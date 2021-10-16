@@ -49,6 +49,14 @@ $blue-colors: (
 // import bootstrap whole sass lib (incorporates all above redefined vars & values)
 @import "~bootstrap/scss/bootstrap";
 
+.heading_lvl_2 {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .heading_lvl_2 {
+    font-size: 2.5rem;
+  }
+}
 //import custom components
 @import "./contact";
 @import "./features";

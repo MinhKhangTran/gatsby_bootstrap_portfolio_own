@@ -47,7 +47,7 @@ const Navigation = () => {
               {navArray.map((nav) => {
                 const { id, url, title } = nav;
                 return (
-                  <Nav.Link onClick={handleClose} key={id} href={url}>
+                  <Nav.Link key={id} href={url}>
                     {title}
                   </Nav.Link>
                 );

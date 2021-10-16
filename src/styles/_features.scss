@@ -1,0 +1,29 @@
+#features {
+  overflow-x: hidden;
+}
+.kasten {
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.features_col {
+  padding: 1rem 3rem;
+}
+.features_subtitle {
+  width: 80%;
+}
+.features_blob {
+  position: absolute;
+}
+@media screen and (min-width: 992px) {
+  .features_col {
+    padding: 3rem 5rem;
+  }
+  .features_subtitle {
+    width: 60%;
+  }
+  .features_blob {
+    right: -10%;
+
+    z-index: -10;
+  }
+}
