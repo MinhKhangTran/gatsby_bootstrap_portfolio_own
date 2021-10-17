@@ -9,12 +9,12 @@ const Footer = () => {
     <footer className="bg-blue-700">
       <Container className="">
         <Row className="pt-5 pb-4 footer_container mb-4">
-          <Col lg={8}>
+          <Col lg={8} className="mb-4">
             <Link to="/" className="">
               <img src={logo} alt="MKT" />
             </Link>
           </Col>
-          <Col lg={2} className="text-white">
+          <Col lg={2} xs={6} className="text-white">
             <h3>Home</h3>
             <ul className="list-unstyled">
               <li>
@@ -34,7 +34,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col lg={2} className="text-white">
+          <Col lg={2} xs={6} className="text-white">
             <h3>Legal</h3>
             <ul className="list-unstyled">
               <li>
@@ -56,11 +56,11 @@ const Footer = () => {
           </span>
           <div className="socials text-white">
             <a href="https://twitter.com/">
-              <FaTwitter size="2em" />
+              <FaTwitter className="social_icon" />
               <span className="visually-hidden">Twitter</span>
             </a>
             <a href="https://github.com/">
-              <FaGithub size="2em" />
+              <FaGithub className="social_icon" />
               <span className="visually-hidden">Github</span>
             </a>
           </div>
