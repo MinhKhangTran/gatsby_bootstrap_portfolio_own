@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -14,6 +18,13 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/Hero.png",
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `f07g68yd3yyd`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     "gatsby-plugin-sharp",

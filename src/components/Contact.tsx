@@ -35,7 +35,7 @@ const Contact = () => {
               <Col lg={6}>
                 <FloatingLabel
                   className="mb-4"
-                  controlId="floatingName"
+                  controlId="floatingFirstName"
                   label="First name"
                 >
                   <Form.Control required type="text" placeholder="First name" />
@@ -47,7 +47,7 @@ const Contact = () => {
               <Col lg={6}>
                 <FloatingLabel
                   className="mb-4"
-                  controlId="floatingName"
+                  controlId="floatingLastName"
                   label="Last name"
                 >
                   <Form.Control required type="text" placeholder="Last name" />
@@ -58,7 +58,7 @@ const Contact = () => {
               </Col>
               <Col lg={12} className="mx-auto">
                 <FloatingLabel
-                  controlId="floatingInput"
+                  controlId="floatingEmail"
                   label="Email address"
                   className="mb-4"
                 >

@@ -5,6 +5,9 @@
     color: $blue-100;
   }
 }
+.footer_socials span {
+  font-size: 1rem;
+}
 .footer_container {
   border-bottom: 1px solid $blue-100;
 }
@@ -38,5 +41,8 @@
     .social_icon {
       font-size: 2em;
     }
+  }
+  .footer_socials span {
+    font-size: 1.5rem;
   }
 }
