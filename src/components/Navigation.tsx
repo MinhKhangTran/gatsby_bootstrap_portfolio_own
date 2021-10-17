@@ -6,14 +6,15 @@ import logo from "../images/MKT.svg";
 
 const Navigation = () => {
   const [visible, setVisible] = useState(false);
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    }
-  };
+  useEffect(() => {
+    const onScroll = () => {
+      window.scrollY > 200 ? setVisible(true) : setVisible(false);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, [visible]);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -26,7 +27,6 @@ const Navigation = () => {
     { id: 3, url: "#contact", title: "Contact" },
   ];
 
-  window.addEventListener("scroll", toggleVisible);
   return (
     <>
       <Navbar bg="white" expand="lg">
