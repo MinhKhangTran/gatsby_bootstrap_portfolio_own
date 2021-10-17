@@ -57,6 +57,24 @@ $blue-colors: (
     font-size: 2.5rem;
   }
 }
+.back_to_top {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  bottom: 50px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: $primary;
+  transform: translateX(-20px);
+}
+@media screen and (min-width: 992px) {
+  .back_to_top {
+    left: 95%;
+    bottom: 70px;
+  }
+}
 //import custom components
 @import "./contact";
 @import "./features";
