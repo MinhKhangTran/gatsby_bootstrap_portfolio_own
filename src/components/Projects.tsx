@@ -31,7 +31,7 @@ const Projects = () => {
     <section id="projects" className="mt-5 ">
       <Container>
         <Title title="Projects" subtitle="A showcase of my latest works" />
-        <div className="kasten bg-blue-100 position-relative p-5">
+        <div className="kasten project_kasten bg-blue-100 position-relative p-5">
           <img
             className="projects_blob projects_blob_1 d-none d-lg-block"
             src={blob1}

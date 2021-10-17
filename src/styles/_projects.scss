@@ -5,6 +5,9 @@
 .projects_blob {
   position: absolute;
 }
+#projects {
+  overflow: hidden;
+}
 @media screen and (min-width: 992px) {
   .projects_blob_1 {
     right: -10%;
