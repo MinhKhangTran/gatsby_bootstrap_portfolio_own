@@ -1,0 +1,35 @@
+#contact {
+  overflow: hidden;
+}
+.contact_form {
+  padding: 2rem;
+}
+input,
+textarea {
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.contact_kasten {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .contact_form {
+    padding: 3rem 3rem;
+  }
+  .contact_container {
+    width: 800px;
+  }
+  .features_blob {
+    left: 0;
+    bottom: 0;
+  }
+  .contact_kasten {
+    margin-bottom: 7rem;
+  }
+}
