@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "cy:open": "cypress open",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
   },
   "dependencies": {
     "@reach/skip-nav": "^0.16.0",
@@ -32,5 +34,12 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
     "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.1",
+    "axe-core": "^4.3.3",
+    "cypress": "^8.6.0",
+    "cypress-axe": "^0.13.0",
+    "start-server-and-test": "^1.14.0"
   }
 }
