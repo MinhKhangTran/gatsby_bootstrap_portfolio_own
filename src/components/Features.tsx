@@ -13,7 +13,13 @@ const Features = () => {
   const featuresArray = [
     {
       id: 1,
-      icon: <FaTachometerAlt size="4em" className="text-center text-primary" />,
+      icon: (
+        <FaTachometerAlt
+          aria-hidden="true"
+          size="4em"
+          className="text-center text-primary"
+        />
+      ),
       title: "Fast",
       subtitle: (
         <p className="features_subtitle text-center mx-auto lead">
@@ -25,36 +31,55 @@ const Features = () => {
     {
       id: 2,
       icon: (
-        <FaUniversalAccess size="4em" className="text-center text-primary" />
+        <FaUniversalAccess
+          aria-hidden="true"
+          size="4em"
+          className="text-center text-primary"
+        />
       ),
       title: "Accessible",
       subtitle: (
         <p className="features_subtitle text-center mx-auto lead">
           Websites should be accessible for everyone by default. I use the{" "}
-          <b>W</b>eb <b>C</b>ontent <b>A</b>ccessibility <b>G</b>uideline (
-          <b>WCAG</b>) to design and create my websites.
+          <strong>W</strong>eb <strong>C</strong>ontent <strong>A</strong>
+          ccessibility <strong>G</strong>uideline (<strong>WCAG</strong>) to
+          design and create my websites.
         </p>
       ),
     },
     {
       id: 3,
-      icon: <FaDatabase size="4em" className="text-center text-primary" />,
+      icon: (
+        <FaDatabase
+          aria-hidden="true"
+          size="4em"
+          className="text-center text-primary"
+        />
+      ),
       title: "CMS",
       subtitle: (
         <p className="features_subtitle text-center mx-auto lead">
-          With the help of <b>C</b>ontent <b>M</b>anagement <b>S</b>ystems (
-          <b>CMS</b>) you can easily maintain and update your content.
+          With the help of <strong>C</strong>ontent <strong>M</strong>anagement{" "}
+          <strong>S</strong>ystems (<strong>CMS</strong>) you can easily
+          maintain and update your content.
         </p>
       ),
     },
     {
       id: 4,
-      icon: <FaSearchengin size="4em" className="text-center text-primary" />,
+      icon: (
+        <FaSearchengin
+          aria-hidden="true"
+          size="4em"
+          className="text-center text-primary"
+        />
+      ),
       title: "SEO",
       subtitle: (
         <p className="features_subtitle text-center mx-auto lead">
-          With <b>S</b>earch <b>E</b>ngine <b>O</b>ptimaztion (<b>SEO</b>) your
-          Business will play in the top ranks.
+          With <strong>S</strong>earch <strong>E</strong>ngine{" "}
+          <strong>O</strong>ptimaztion (<strong>SEO</strong>) your Business will
+          play in the top ranks.
         </p>
       ),
     },
