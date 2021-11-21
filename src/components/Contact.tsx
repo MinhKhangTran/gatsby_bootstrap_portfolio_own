@@ -39,7 +39,10 @@ const Contact = () => {
                   label="First name"
                 >
                   <Form.Control required type="text" placeholder="First name" />
-                  <Form.Control.Feedback type="invalid">
+                  <Form.Control.Feedback
+                    type="invalid"
+                    style={{ color: "#890e1a" }}
+                  >
                     Please provide a first name
                   </Form.Control.Feedback>
                 </FloatingLabel>
@@ -51,7 +54,10 @@ const Contact = () => {
                   label="Last name"
                 >
                   <Form.Control required type="text" placeholder="Last name" />
-                  <Form.Control.Feedback type="invalid">
+                  <Form.Control.Feedback
+                    type="invalid"
+                    style={{ color: "#890e1a" }}
+                  >
                     Please provide a last name
                   </Form.Control.Feedback>
                 </FloatingLabel>
@@ -67,7 +73,10 @@ const Contact = () => {
                     type="email"
                     placeholder="name@example.com"
                   />
-                  <Form.Control.Feedback type="invalid">
+                  <Form.Control.Feedback
+                    type="invalid"
+                    style={{ color: "#890e1a" }}
+                  >
                     Please provide an email
                   </Form.Control.Feedback>
                 </FloatingLabel>
@@ -80,7 +89,10 @@ const Contact = () => {
                     placeholder="Leave a message here"
                     style={{ height: "150px" }}
                   />
-                  <Form.Control.Feedback type="invalid">
+                  <Form.Control.Feedback
+                    type="invalid"
+                    style={{ color: "#890e1a" }}
+                  >
                     Please provide a message
                   </Form.Control.Feedback>
                 </FloatingLabel>

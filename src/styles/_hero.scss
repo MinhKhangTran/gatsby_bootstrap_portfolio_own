@@ -1,14 +1,22 @@
 h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
 }
 .hero_span {
-  font-size: 1.125rem;
+  font-size: 1rem;
+}
+.hero_subtitle {
+  text-align: center;
 }
 #hero {
   border-bottom: 1px solid $blue-100;
   padding-bottom: 3rem;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   #hero {
     height: calc(100vh - 56px);
   }
@@ -18,8 +26,11 @@ h1 {
     place-items: center;
   }
   h1,
-  .hero_span,
   .hero_subtitle {
     font-size: 2.25rem;
+    text-align: left;
+  }
+  .hero_span {
+    font-size: 1.25rem;
   }
 }

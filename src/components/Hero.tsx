@@ -9,12 +9,16 @@ const Hero = () => {
         <Row>
           <Col md={6} className="my-auto">
             <span className="hero_span d-none d-lg-block">Hi I'm</span>
-            <h1 className="text-primary">Minh Khang Tran</h1>
+            <h1 className="text-primary">Be accessible everywhere</h1>
             <p className="hero_subtitle">
-              I make accessible & fast websites <br /> that will grow your
-              business
+              I make accessible & fast websites{" "}
+              <br className="d-none d-md-flex" /> that will grow your business
             </p>
-            <Button size="lg">Hire me</Button>
+            <div className="hero_button_wrapper d-flex justify-content-center justify-content-md-start">
+              <Button size="lg" href="#contact">
+                Hire me
+              </Button>
+            </div>
           </Col>
           <Col md={6} className="order-first order-md-last">
             <div className="image_wrapper d-none d-md-flex">
@@ -23,7 +27,7 @@ const Hero = () => {
                 alt="hero_image_mkt_lg"
               />
             </div>
-            <div className="image_wrapper d-md-none d-flex">
+            <div className="image_wrapper d-md-none d-flex justify-content-center">
               <StaticImage
                 src="../images/Hero-min.png"
                 alt="hero_image_mkt_sm"
