@@ -8,13 +8,12 @@ const Hero = () => {
       <Container className="hero_container">
         <Row>
           <Col md={6} className="my-auto">
-            <span className="hero_span d-none d-lg-block">Hi I'm</span>
-            <h1 className="text-primary">Be accessible everywhere</h1>
+            <h1 className="text-primary fw-bold">Be accessible everywhere</h1>
             <p className="hero_subtitle">
               I make accessible & fast websites{" "}
               <br className="d-none d-md-flex" /> that will grow your business
             </p>
-            <div className="hero_button_wrapper d-flex justify-content-center justify-content-md-start">
+            <div className="hero_button_wrapper d-flex justify-content-center justify-content-md-start mt-5">
               <Button size="lg" href="#contact">
                 Hire me
               </Button>
