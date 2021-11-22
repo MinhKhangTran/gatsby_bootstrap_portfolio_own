@@ -8,8 +8,8 @@ import Projects from "../components/Projects";
 import SEO from "../components/Seo";
 
 // markup
-const IndexPage = ({ serverData }) => {
-  const blogs = serverData.data.user.publication.posts;
+const IndexPage = () => {
+  // const blogs = serverData.data.user.publication.posts;
 
   return (
     <Layout>
@@ -17,53 +17,52 @@ const IndexPage = ({ serverData }) => {
       <Hero />
       <Features />
       <Projects />
-      <Blog blogs={blogs} />
       <Contact />
     </Layout>
   );
 };
 
 // Fetching post from Hashnode with ssr
-export async function getServerData() {
-  const query = `
-  {
-      user(username: "khang93") {
-        publication {
-          posts(page: 0) {
-            title
-            brief
-            slug
-            coverImage
-            contentMarkdown
-            _id
-          }
-        }
-      }
-    }
-  `;
-
-  try {
-    const res = await fetch("https://api.hashnode.com/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({ query }),
-    });
-    if (!res.ok) {
-      throw new Error(`Response failed`);
-    }
-    return {
-      props: await res.json(),
-    };
-  } catch (error) {
-    return {
-      status: 500,
-      headers: {},
-      props: {},
-    };
-  }
-}
+// export async function getServerData() {
+//  const query = `
+//  {
+//      user(username: "khang93") {
+//        publication {
+//          posts(page: 0) {
+//            title
+//            brief
+//            slug
+//            coverImage
+//            contentMarkdown
+//            _id
+//          }
+//        }
+//      }
+//    }
+//  `;
+//
+//  try {
+//    const res = await fetch("https://api.hashnode.com/", {
+//      method: "POST",
+//      headers: {
+//        "Content-Type": "application/json",
+//        Accept: "application/json",
+//      },
+//      body: JSON.stringify({ query }),
+//    });
+//    if (!res.ok) {
+//      throw new Error(`Response failed`);
+//    }
+//    return {
+//      props: await res.json(),
+//    };
+//  } catch (error) {
+//    return {
+//      status: 500,
+//      headers: {},
+//      props: {},
+//    };
+//  }
+//}
 
 export default IndexPage;
