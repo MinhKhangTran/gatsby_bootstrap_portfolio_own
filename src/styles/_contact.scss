@@ -19,17 +19,20 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
-  .contact_form {
-    padding: 3rem 3rem;
-  }
-  .contact_container {
-    width: 800px;
-  }
-  .features_blob {
-    left: 0;
-    bottom: 0;
-  }
-  .contact_kasten {
-    margin-bottom: 7rem;
+  #contact {
+    .contact_form {
+      padding: 3rem 3rem;
+    }
+    .contact_container {
+      width: 800px;
+    }
+    .features_blob {
+      left: 0;
+      bottom: 0;
+      opacity: 50%;
+    }
+    .contact_kasten {
+      margin-bottom: 7rem;
+    }
   }
 }

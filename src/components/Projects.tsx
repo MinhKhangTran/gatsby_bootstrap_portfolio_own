@@ -28,10 +28,10 @@ const Projects = () => {
   }: IProjects = useStaticQuery(query);
 
   return (
-    <section id="projects" className="mt-5 ">
+    <section id="projects" className="section">
       <Container>
         <Title title="Projects" subtitle="A showcase of my latest works" />
-        <div className="kasten project_kasten bg-blue-100 position-relative p-5">
+        <div className="kasten project_kasten bg-blue-100 position-relative p-4">
           <img
             className="projects_blob projects_blob_1 d-none d-lg-block"
             src={blob1}
@@ -44,7 +44,7 @@ const Projects = () => {
           />
           {nodes.map((pro, index) => {
             return (
-              <Row key={pro.id} className="py-5 p-lg-4 my-lg-5">
+              <Row key={pro.id} className="py-4 p-md-4 my-md-5">
                 <Col lg={6} className={`${index % 2 === 0 && "order-lg-2"}`}>
                   <GatsbyImage
                     image={getImage(pro.image.gatsbyImageData)}

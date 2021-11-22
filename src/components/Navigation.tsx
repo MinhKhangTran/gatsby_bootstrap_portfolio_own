@@ -24,7 +24,8 @@ const Navigation = () => {
   const navArray = [
     { id: 1, url: "#features", title: "Features" },
     { id: 2, url: "#projects", title: "Projects" },
-    { id: 3, url: "#contact", title: "Contact" },
+    { id: 3, url: "#blog", title: "Blog" },
+    { id: 4, url: "#contact", title: "Contact" },
   ];
 
   return (

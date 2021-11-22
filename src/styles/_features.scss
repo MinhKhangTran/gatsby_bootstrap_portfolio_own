@@ -13,14 +13,16 @@
   position: absolute;
 }
 @media screen and (min-width: 992px) {
-  .features_subtitle {
-    width: 60%;
-  }
-  .features_blob {
-    right: -10%;
-    top: 20%;
-    width: 440px;
-    z-index: -10;
-    opacity: 50%;
+  #features {
+    .features_subtitle {
+      width: 60%;
+    }
+    .features_blob {
+      left: -10%;
+      top: 20%;
+      width: 440px;
+      z-index: -10;
+      opacity: 50%;
+    }
   }
 }

@@ -22,7 +22,7 @@ const Contact = () => {
     setValidated(true);
   };
   return (
-    <section id="contact" className="mt-5 position-relative">
+    <section id="contact" className="section position-relative">
       <img className="features_blob d-none d-lg-block" src={blob} alt="" />
       <Container className="contact_container">
         <Title
