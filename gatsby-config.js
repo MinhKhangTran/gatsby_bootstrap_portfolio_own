@@ -4,10 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "gatsby_bootstrap_custom_portfolio",
+    siteUrl: "https://minhkhangtran.com",
+    title: "My portfolio",
     description: "A static site made with gatsby and bootstrap ✨",
-    keywords: "bootstrap, gatsby",
+    keywords: "bootstrap, gatsby, minh khang tran, portfolio, freelancer from germany, freiberufler für websites, freiberufler für webdesign, website, webdesign, static sites, mkt,",
     author: "mkt",
   },
   plugins: [
