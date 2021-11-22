@@ -52,9 +52,14 @@ $blue-colors: (
 .heading_lvl_2 {
   font-size: 1.5rem;
 }
+
 @media screen and (min-width: 992px) {
   .heading_lvl_2 {
     font-size: 2.5rem;
+    text-align: left;
+  }
+  .heading_subtitle {
+    text-align: left;
   }
 }
 .back_to_top {
@@ -73,6 +78,15 @@ $blue-colors: (
   .back_to_top {
     left: 95%;
     bottom: 70px;
+  }
+}
+
+.section {
+  margin-top: 4rem;
+}
+@media screen and (min-width: 992px) {
+  .section {
+    margin-top: 7rem;
   }
 }
 //import custom components

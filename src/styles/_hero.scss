@@ -1,6 +1,9 @@
 h1 {
   font-size: 3rem;
   text-align: center;
+  line-height: 2.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 .hero_span {
   font-size: 1rem;
@@ -11,6 +14,7 @@ h1 {
 #hero {
   border-bottom: 1px solid $blue-100;
   padding-bottom: 3rem;
+  margin-top: 5rem;
   a {
     color: white;
     text-decoration: none;
@@ -19,6 +23,7 @@ h1 {
 @media screen and (min-width: 768px) {
   #hero {
     height: calc(100vh - 56px);
+    margin-top: 0rem;
   }
   .hero_container {
     height: 100%;
@@ -26,7 +31,7 @@ h1 {
     place-items: center;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: left;
   }
   .hero_subtitle {
@@ -35,5 +40,17 @@ h1 {
   }
   .hero_span {
     font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #hero {
+    margin-top: 0rem;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: left;
+    line-height: 3.75rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
   }
 }
