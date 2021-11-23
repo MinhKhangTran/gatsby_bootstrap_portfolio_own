@@ -2,7 +2,6 @@ require("dotenv").config({
   path: `.env`,
 });
 
-const siteUrl = `https://minhkhangtran.com`
 
 module.exports = {
   siteMetadata: {
@@ -18,6 +17,7 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -34,51 +34,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-gatsby-cloud",
-    // {
-    //   resolve: `gatsby-plugin-intl`,
-    //   options: {
-    //     // language JSON resource path
-    //     path: `${__dirname}/src/intl`,
-    //     // supported language
-    //     languages: [`en`, `de`],
-    //     // language file path
-    //     defaultLanguage: `en`,
-    //     // option to redirect to `/ko` when connecting `/`
-    //     redirect: true,
-    //   },
-    // },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({
-          allSitePage: { nodes: allPages },
-        }) => {
-          
-
-          return allPages.map(page => {
-            return { ...page }
-          })
-        },
-        serialize: ({ path }) => {
-          return {
-            url: path,
-            changefreq: 'weekly',
-            priority: 0.7,
-
-          }
-        },
-      },
-    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
