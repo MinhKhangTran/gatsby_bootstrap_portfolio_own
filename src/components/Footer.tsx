@@ -3,18 +3,21 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import logo from "../images/MKT_white.svg";
+import Language from "./Language";
+
+import { FormattedMessage } from "gatsby-plugin-intl";
 
 const Footer = () => {
   return (
     <footer className="bg-blue-700">
       <Container className="">
         <Row className="pt-5 pb-4 footer_container mb-4">
-          <Col lg={8} className="mb-4">
+          <Col lg={6} className="mb-4">
             <Link to="/" className="">
               <img src={logo} alt="MKT" />
             </Link>
           </Col>
-          <Col lg={2} xs={6} className="text-white">
+          <Col lg={2} xs={4} className="text-white">
             <h3>Home</h3>
             <ul className="list-unstyled">
               <li>
@@ -39,7 +42,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col lg={2} xs={6} className="text-white">
+          <Col lg={2} xs={4} className="text-white">
             <h3>Legal</h3>
             <ul className="list-unstyled">
               <li>
@@ -54,10 +57,15 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
+          <Col lg={2} xs={4}>
+            <h3 className="text-white">Language</h3>
+            <Language />
+          </Col>
         </Row>
         <div className="footer_socials pb-4 d-flex justify-content-between align-items-center">
           <span className="lead text-white">
-            &copy; {new Date().getFullYear()}, MKT. All rights reserved
+            &copy; {new Date().getFullYear()}, MKT.{" "}
+            <FormattedMessage id="footer_build" />
           </span>
           <div className="socials text-white">
             <a href="https://twitter.com/">
