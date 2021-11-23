@@ -2,6 +2,8 @@ require("dotenv").config({
   path: `.env`,
 });
 
+const siteUrl = `https://minhkhangtran.com`
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://minhkhangtran.com",
@@ -48,36 +50,32 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output: "/sitemap",
         query: `
         {
-          site {
-            siteMetadata {
-              siteUrl
-            }
-          }
-          allSitePage(
-            filter: {
-              path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
-            }
-          ) {
+          allSitePage {
             nodes {
               path
             }
           }
         }
-        `,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          return allPages.map((page) => {
-            return { ...page };
-          });
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+        }) => {
+          
+
+          return allPages.map(page => {
+            return { ...page }
+          })
         },
         serialize: ({ path }) => {
           return {
             url: path,
-            changefreq: "weekly",
+            changefreq: 'weekly',
             priority: 0.7,
-          };
+
+          }
         },
       },
     },
